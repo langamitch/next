@@ -51,7 +51,7 @@ export default function Cards() {
     </div>
 
     {/* Card 2 */}
-    <div className="bg-gray-100 p-6 rounded-lg">
+    <div className="transparent p-6 rounded-lg">
       <p className="text-xs text-gray-500 uppercase mb-2">Aerodynamics</p>
       <p className="text-[clamp(16px,1.2vw,20px)] text-neutral-900 font-medium leading-[1.3]" aria-label="Advanced aerodynamics, including a large rear wing and air intakes, provide maximum downforce and stability at high speeds.">
         <div className="line-mask line1-mask" aria-hidden="true" style={{ position: 'relative', display: 'block', textAlign: 'left', overflow: 'clip' }}>
@@ -73,7 +73,7 @@ export default function Cards() {
     </div>
 
     {/* Card 3 */}
-    <div className="bg-gray-100 p-6 rounded-lg">
+    <div className="bg-transparent p-6 rounded-lg">
       <p className="text-xs text-gray-500 uppercase mb-2">Suspension & Handling</p>
       <p className="text-[clamp(16px,1.2vw,20px)] text-neutral-900 font-medium leading-[1.3]" aria-label="The race-bred suspension and lightweight construction offer unparalleled cornering and handling for driving enthusiasts.">
         <div className="line-mask line1-mask" aria-hidden="true" style={{ position: 'relative', display: 'block', textAlign: 'left', overflow: 'clip' }}>
@@ -95,7 +95,7 @@ export default function Cards() {
     </div>
 
     {/* Card 4 */}
-    <div className="bg-gray-100 p-6 rounded-lg">
+    <div className="bg-transparent p-6 rounded-lg">
       <p className="text-xs text-gray-500 uppercase mb-2">Interior & Design</p>
       <p className="text-[clamp(16px,1.2vw,20px)] text-neutral-900 font-medium leading-[1.3]" aria-label="Minimalist, driver-focused interior with premium materials and sporty accents, combining comfort with pure performance aesthetics.">
         <div className="line-mask line1-mask" aria-hidden="true" style={{ position: 'relative', display: 'block', textAlign: 'left', overflow: 'clip' }}>
