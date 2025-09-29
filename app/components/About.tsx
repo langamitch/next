@@ -8,7 +8,7 @@ export default function About() {
         rel="stylesheet"
       />
       <section
-        className="sticky top-0 w-full min-h-[60vh] flex justify-center bg-[#fcfcfc] z-20"
+        className="fixed top-0 left-0 w-full min-h-[60vh] flex justify-center bg-[#fcfcfc] z-20"
         style={{ fontFamily: 'Inter, sans-serif' }}
       >
         <div className="max-w-2xl mx-auto ">

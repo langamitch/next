@@ -14,12 +14,10 @@ export default function Home() {
         <Hero />
         <div className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }} />
       </div>
-      <div className="relative w-full h-screen">
-        <About/>
-        <div className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 10 }} />
+      <About />
+      <div className="relative w-full" style={{ marginTop: '-20vh', zIndex: 30 }}>
+        <Cards />
       </div>
-     
-      <Cards />
     </main>
   );
 }
