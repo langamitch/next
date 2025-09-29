@@ -11,7 +11,7 @@ export default function About() {
     if (!aboutRef.current) return;
     gsap.fromTo(
       aboutRef.current,
-      { y: "100vh", opacity: 0, position: "absolute", top: 0, left: 0 },
+      { y: "100vh", opacity: 1, position: "absolute", top: 0, left: 0 },
       {
         y: 0,
         opacity: 1,
