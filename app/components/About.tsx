@@ -1,6 +1,36 @@
-import Image from "next/image";
+"use client";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    if (!aboutRef.current) return;
+    gsap.fromTo(
+      aboutRef.current,
+      { y: "100vh", position: "absolute", top: 0, left: 0 },
+      {
+        y: 0,
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 20,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+          pin: true,
+          pinSpacing: false,
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       <link
@@ -8,8 +38,9 @@ export default function About() {
         rel="stylesheet"
       />
       <section
-        className="fixed top-0 left-0 w-full min-h-[60vh] flex justify-center bg-[#fcfcfc] z-20"
-        style={{ fontFamily: 'Inter, sans-serif' }}
+        ref={aboutRef}
+        className="w-full min-h-[60vh] flex justify-center bg-[#fcfcfc] z-20"
+        style={{ fontFamily: 'Inter, sans-serif', position: 'absolute', top: 0, left: 0 }}
       >
         <div className="max-w-2xl mx-auto ">
         <div className="max-w-2xl mx-auto p-8">
