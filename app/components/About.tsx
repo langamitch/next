@@ -8,8 +8,8 @@ export default function About() {
         rel="stylesheet"
       />
       <section
-        className="relative sticky w-full min-h-screen flex justify-center bg-[#fcfcfc]"
-        style={{ fontFamily: 'Inter, sans-serif', zIndex: 10 }}
+        className="sticky top-0 w-full min-h-[60vh] flex justify-center bg-[#fcfcfc] z-20"
+        style={{ fontFamily: 'Inter, sans-serif' }}
       >
         <div className="max-w-2xl mx-auto ">
         <div className="max-w-2xl mx-auto p-8">
