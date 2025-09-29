@@ -11,19 +11,20 @@ export default function About() {
     if (!aboutRef.current) return;
     gsap.fromTo(
       aboutRef.current,
-      { y: "100vh", position: "absolute", top: 0, left: 0 },
+      { y: "100vh", opacity: 0, position: "absolute", top: 0, left: 0 },
       {
         y: 0,
+        opacity: 1,
         position: "fixed",
         top: 0,
         left: 0,
         zIndex: 20,
-        ease: "power2.out",
+        ease: "power3.out",
         scrollTrigger: {
           trigger: aboutRef.current,
           start: "top bottom",
           end: "top top",
-          scrub: true,
+          scrub: 0.5,
           pin: true,
           pinSpacing: false,
         },
