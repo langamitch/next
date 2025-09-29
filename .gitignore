@@ -38,4 +38,44 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+log.txt
+
+# Build artifacts
+dist/
+tmp/
+temp/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Misc
+*.local
+*.lock
+*.cache
+*.pid
+*.seed
+*.pid.lock
 next-env.d.ts
